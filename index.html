@@ -185,14 +185,36 @@
   
     <a href="https://www.epa.gov/sites/default/files/2018-11/documents/cecs-ppcps-factsheet.pdf">Pharmaceuticals and personal care products(ppcps)(2023) 
       EPA. Available at: https://www.epa.gov/sites/default/files/2018-11/documents/cecs-ppcps-factsheet.pdf (Accessed: 06 December 2024). </a>
+
+      <a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/ppcp">PPCP (no date) PPCP - an overview | ScienceDirect Topics. 
+        Available at: https://www.sciencedirect.com/topics/earth-and-planetary-sciences/ppcp  (Accessed: 06 December 2024).</a>
+
+      <a href="https://www.nature.com/articles/s41579-021-00649-x">Larsson, D.G.J. and Flach, C.-F. 
+        (2021) Antibiotic resistance in the environment, Nature News. Available at: https://www.nature.com/articles/s41579-021-00649-x
+        (Accessed: 06 December 2024).</a>
+
+        <a href="https://www.sciencedirect.com/science/article/pii/S0045653521031118">Author links open overlay panelDavid Megson a b et al. 
+          (2021) Polychlorinated biphenyl (PCB) concentrations and profiles in marine mammals from the North Atlantic Ocean, Chemosphere. 
+          Available at: https://www.sciencedirect.com/science/article/pii/S0045653521031118  (Accessed: 06 December 2024).</a>
+      
+       <a href="https://www.endangered.org/campaigns/southern-resident-orcas/">Southern resident orcas (2018) Endangered Species Coalition. 
+         Available at: https://www.endangered.org/campaigns/southern-resident-orcas/  (Accessed: 06 December 2024). </a>
+
+       <a href="https://www.sciencedirect.com/science/article/pii/S2590123023006230#:~:text=The%20types%20of%20ozonation%20for,ozone%20decomposition%2C%20producing%20%C2%B7OH">
+         Towards removal of ppcps by Advanced Oxidation Processes: A Review (2023) Results in Engineering. 
+         Available at: https://www.sciencedirect.com/science/article/pii/S2590123023006230#:~:text=The%20types%20of%20ozonation%20for,ozone%20decomposition%2C%20producing%20%C2%B7OH(Accessed: 06 December 2024). </a>
+
+      <a href="https://pubmed.ncbi.nlm.nih.gov/12420929/">Y;, H.P. (no date) Degradation of pentachlorophenol by ozonation and biodegradability of intermediates, Water research. 
+        Available at: https://pubmed.ncbi.nlm.nih.gov/12420929/  (Accessed: 06 December 2024). </a>
+
+      <a href="https://extension.psu.edu/overview-of-pharmaceuticals-and-personal-care-products-ppcps-and-water-quality">Overview of pharmaceuticals and Personal Care Products (ppcps) and water quality 
+        (no date) Penn State Extension. Available at: https://extension.psu.edu/overview-of-pharmaceuticals-and-personal-care-products-ppcps-and-water-quality  (Accessed: 06 December 2024). </a>
     </pre>
   </p>
 </html>
 
 <video src="Conference Project Presentation .mp4" width="800" height="450" controls>
 </video>
-
-<div id="last-updated">Loading last update time...</div>
 
 <!-- //////////////////////////////////////////////////////////////////////////////// -->
   <!-- ////////////////////////////// Adding last update ////////////////////////////// -->
@@ -282,91 +304,5 @@
 
 
 
-<!--Verify Button-->
-<!-- <button onclick="verifyLastUpdatedTime()" style="display: block; margin: 10px auto; padding: 8px 16px;">
-  Verify Last Modified Time
-</button>
 
-<script>
-  async function getLastUpdatedTime() {
-    const username='ewharton242';
-    const repo='FY6878973';
-
-    const url = 'https://api.github.com/repos/${username}/${repo}/commits';
-
-    try{
-      const response = await fetch(url, {
-        method: 'GET',
-        headers: {
-          'Accept': 'application/vnd.github.v3+json',
-        }
-      });
-      if (!response.ok) {
-        throw new Error('Error fetching data: ${response.status} - ${response.statusText}');
-      }
-      const commits = await response.json();
-      if (commits && commits.length > 0 {
-        const lastCommitDate = new Date(commits[0].commit.committer.date);
-
-        //Displaying the time on load 
-        document.getElementById('last-updated').innerText = 'Last Modified Time: $(lastCommitDate.toLocaleString()}';
-      } else {
-        document.getElementById('last-updated').innerText = 'No commits found in the repository.';
-      }
-    } catch (error) {
-      console.error('Error fetching the last updated time:', error);
-      document.getElementById('last-updated').innerText = 'Error fetching update time. Please the check the repository details.';
-    }
-  }
-
-  //Function to verify the last update time by re-fetching it from the API 
-  async function verifyLastUpdatedTime() {
-    document.getElementById('last-updated').innerText = 'Verifying...';
-    await getLastUpdatedTime();
-    alert("Last modified time has been successfully verified from GitHub API.");
-  }
-
-  //Initial load to display the time on page load
-  window.onload = getLastUpdatedTime;
-  
-</script> -->
-
-<!--Placeholder for total word count -->
-<!-- <p id="totalWordCount"></p>
-
-<hr>
-
-<script>
-  //Function to calculate and display word count for a specified section 
-  function displayWordCount (sectionId, outputId) {
-    //Get the text content from the specified section 
-    const text = document.getElementById (sectionId).textContent;
-
-    //Split text into words based on spaces and filter out any empty strings
-    cosntwordArray = text.trim().split(/\s+/);
-
-    //Count the words 
-    const wordCount = wordArray.length;
-
-    //Return the word count for summing purposes
-    return wordCount;
-  }
-
-  //Function to calculate and display total word from selected sections 
-  function displayTotalWordCount() {
-    //Calculate word count for each section and accumulate the total
-    const AbstractCount = displayWordCount("Abstract");
-    const IntroductionCount = displayWordCount("Introduction");
-    const Analysis_and_discussionCount = displayWordCount("Analysis and Discussion");
-
-    //Calculate the sum of all selected sections
-    const totalWordCount = AbstractCount + IntroductionCount + Analysis_and_DiscussionCount;
-
-    //Display the total word count 
-    document.getElementById("totalWordCount").innerText = 'Total word count: ${totalWordCount}';
-  }
-
-  //Run the function for specific sections and display total count when the page loads
-  window.onload = displayTotalWordCount;
-</script> -->
 
